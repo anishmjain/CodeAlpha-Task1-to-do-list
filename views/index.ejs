@@ -1,0 +1,28 @@
+
+<%- include("partials/header.ejs") %>
+
+
+<h2 class="un"> <%= new Date().toLocaleDateString(); %></h2>
+<div class="fam">
+<form action="/work" method="POST" >
+  <input type="text" name="inputt" autocomplete="off" placeholder="Reminder">
+  
+  <input onclick="" class="btnn" type="submit" value="+">
+</form>
+</div>
+
+<div class="fam">
+<div class="ull">
+  <ul >
+  
+     <% items.forEach(function(item){ %>
+       <li>
+        <input type="checkbox" onclick="textToCut.textContent.item" >     <%= item %></li>
+     <% }); %>
+  </ul>
+  </div>
+
+</div>
+
+
+
